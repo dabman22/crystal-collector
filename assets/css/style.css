@@ -1,0 +1,67 @@
+body{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #444444;
+    margin-bottom: 1%;
+	padding-top: .5%;
+	padding-bottom: 2%;
+
+}
+.jumbotron{
+	background-color: #d5d9e0;
+	color: #0e7a0d;
+	font-family: 'Abril Fatface', "Times New Roman", serif;
+	margin-bottom: 1%;
+	padding-top: .5%;
+	padding-bottom: 2%;
+}
+
+@media screen and (max-width: 767px){
+	img{
+		width: 50% !important;
+	}
+	.left{
+		padding-top: 20px;
+	}
+
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h2{
+	font-family: 'Sigmar One', Verdana, Geneva, sans-serif;
+    color: #0e7a0d;
+}
+
+img{
+	border-radius: 6px;
+	width: 100%;
+}
+
+#currentWord, #guessesLeft, #lettersGuessed, #wins, #losses{
+	font-size: 24px;
+}
+
+.left{
+	background-color: #d5d9e0;
+	border-radius: 6px;
+}
+
+.right{
+	padding-right: 0;
+}
+
+.row{
+	border-radius: 6px;
+}
+
+
+.row.match-my-cols {
+    overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+
+}
