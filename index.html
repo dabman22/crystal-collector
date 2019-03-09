@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Crystal Collector Game!</title>
+  <meta charset="UTF-8">
+  <meta name="classification" content="game" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>The Crystal Collector!</h1>
+			<h5>You will start the game with a random number. There are four crystals below and by clicking on a crystal you will add a certain amount of points to your total score. You win by matching your total score to random number and if not you then lose the game if your total score goes above the random number. The value of each crystal is a secret from you until you click on it revealing the value. Each time when the game starts, the game will change the values of each crytal.</h5>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<button class="btn btn-default btn-lg">Start Game</button>
+				</div>
+				<div class="col-md-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4>Number to Match</h4>
+						</div>
+						<div class="panel-body">
+							<p><span id="targetNumber"></span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4>Wins</h4>
+						</div>
+						<div class="panel-body">
+							<p><span id="winCount"></span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4>Losses</h4>
+						</div>
+						<div class="panel-body">
+							<p><span id="lossCount"></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4>Total score</h4>
+						</div>
+						<div class="panel-body">
+							<p><span id="yourScore"></span></p>
+						</div>
+					</div>
+				</div>
+					<span class="col-md-2"><img src="assets/images/rubyImage.jpg" id="ruby" alt="An image of a ruby is shown." class="img-thumbnail"></span>
+					<span class="col-md-2"><img src="assets/images/diamondImage.jpg" id="diamond" alt="An image of a diamond is shown." class="img-thumbnail"></span>
+					<span class="col-md-2"><img src="assets/images/sapphireImage.jpg" id="sapphire" alt="An image of a sapphire is shown." class="img-thumbnail"></span>
+					<span class="col-md-2"><img src="assets/images/emeraldImage.jpg" id="emerald" alt="An image of an emerald is shown." class="img-thumbnail"></span>
+			</div>
+			<div class="row">
+				<div id="alert"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
